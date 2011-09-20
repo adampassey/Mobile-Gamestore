@@ -1,0 +1,111 @@
+/* custom tabbar icons in sencha */
+.tabbarstore {
+	-webkit-mask-box-image: url('../img/tabBarIconStore.png');
+}
+.tabbarcollection {
+	-webkit-mask-box-image: url('../img/tabBarIconCollection.png');
+}
+
+.game { float: left; width: 33%; min-width: 220px; height: 120px; border-bottom: 1px solid #d3d3d3; margin-bottom: 10px;}
+
+.thumbnail { height: 100px; width: 100px; float: left; margin-right: 10px;
+						/* background: url('../img/game-img-loader.gif') center center no-repeat; */ }
+.thumbnail img, .recommendedBoxart { height: 100px; width: 100px; -webkit-box-shadow: 0px 0px 5px #1a1a1a; -webkit-border-radius: 18px; }
+/* the animating boxart (when added) */
+.animatingBoxart { position: absolute; z-index: 999; top: 63px; left: 20px; -webkit-box-shadow: 0px 0px 5px #1a1a1a; -webkit-border-radius: 18px; }
+
+.gameList { padding: 20px; }
+
+.gameDetails {  }
+	.gameDetails h2, .gameDetails h2 a { color: #1f1f1f; font-size: 16px; font-weight: bold; text-decoration: none; }
+	.release { color: #6f6f6f; font-size: 14px; display: block; }
+	.ratingList { }
+	.ratingList li { display: block; }
+		.ratingList li strong { font-size: 11px; font-weight: bold; }
+	.rating { width: 59px; height: 11px; display: block; text-indent: -99999px; margin-left: 110px; margin-top: 3px; margin-bottom: 5px; }
+		.rating_5 { background: url('../img/stars.png'); }
+		.rating_4 { background: url('../img/stars.png') 0px -12px; }
+		.rating_3 { background: url('../img/stars.png') 0px -24px; }
+		.rating_2 { background: url('../img/stars.png') 0px -36px; }
+		.rating_1 { background: url('../img/stars.png') 0px -48px; }
+	.buy { color: #FFF; padding: 3px 5px; font-size: 14px; margin-top: 10px; text-decoration: none; font-weight: bold;
+											border: 1px solid #898a8b; background: #919296; text-shadow: #5a5a5a 1px -1px 1px;
+											-webkit-border-radius: 8px;  }
+											
+/* closeup */
+#closeup { padding: 20px; width: 100%; }
+#leftColumn { float: left; height: 250px; width: 120px; }
+	#leftColumn img { -webkit-box-shadow: 0px 0px 8px #1a1a1a; float: left; -webkit-border-radius: 18px;}
+	#leftColumn .buy { width: 100px; padding: 5px 0; margin-top: 20px; text-align: center; display: block; float: left; clear: left; margin-bottom: 50px; }
+#rightColumn { float: left; width: 760px;}
+	#rightColumn h1 { color: #1f1f1f; font-size: 24px; font-weight: bold; display: block; }
+	#rightColumn h2, #rightColumn h3 { color: #6e6e6e; font-weight: 300; font-size: 11px; display: block; }
+	#rightColumn p { color: #1a1a1a; font-size: 14px; margin-top: 15px; }
+	#rightColumn .rating { margin-left: 0; margin-bottom: 10px; }
+	
+.recommendedGamesHeader { color: #909090; font-weight: bold; font-size: 24px; margin-top: 18px;}
+	.recommendedGames li { float: left; }
+		.recommendedBoxart { float: left; margin: 20px 20px 0 0; }
+	
+#videos { width: 2000px; }
+.videoThumb { float: left; margin: 10px; height: 150px; width: 190px; }
+	.videoThumb img { height: 150px; width: 190px; 
+									-webkit-border-radius: 5px; }
+									
+/* additional details */
+.detailsNav { float: left; clear: both; margin-top: 50px; margin-left: 10px; }
+.detailsNav li { float: left; }
+	.detailsNav li a { float: left; padding: 10px 15px; -webkit-border-radius: 4px 4px 0 0; text-decoration: none; color: #909090; font-weight: bold;}
+		.detailsNav li a.active { background: #FFF; border-width: 1px 1px 0 1px; border-color: #d3d3d3; color: #1a1a1a;
+														-webkit-box-shadow: 0px 0px 5px #1a1a1a; }
+
+.cheatsContainer { display: none; width: 100%; float: left; clear: left; padding-bottom: 25px; background: #fff; font-size: 12px;}
+	.cheatsInnerContainer { display: block; padding: 20px; }
+	.cheatsContainer strong { color: #000; font-size: 14px; font-weight: bold; }
+	.cheatsContainer hr { border-width: 1px 0 0 0; border-style: solid; border-color: #d3d3d3; margin: 15px 0;}
+
+#comments { float: left; clear: left; display: block; width: 100%; padding-bottom: 25px; background: #f1f1f1; }
+	#comments h3 { color: #6e6e6e; font-weight: bold; font-size: 18px; padding: 0 20px; }
+		#commentList { display: block; background: #FFF; width: 100%; }
+			#commentList li { padding: 12px 20px; display: block; border-width: 1px 0 0 0px; border-style: solid; border-color: #d3d3d3;
+											 }
+			#commentList li.dev_1 { background: #cfe9fb url('../img/commentListDevFlag.png') top right no-repeat; }
+				#commentList li:first-child { border-width: 0px 0px 1px 0px; }
+				#commentList li:last-child { border-width: 1px 0 1px 0;}
+				#commentList li:nth-child(even) { background: #f1f1f1; }
+				.commentName { font-size: 12px; color: #7b7b7b; display: block; float: left; margin-bottom: 15px;  }
+					#commentList li p { display: block; clear: left; padding-left: 30px; background: url('../img/commentQuoteSm.png') top left no-repeat; 
+														margin: 10px 0; }
+					#commentList li p.noBg { background: none; padding-left: 0;}
+#makeCommentForm { background: #1f1f1f; display: block; padding: 20px 20px 40px 20px; }
+	#makeCommentForm label { color: #FFF; font-weight: bold; display: block; font-size: 14px;}
+	#inputComment { width: 80%; min-width: 100px; font-size: 14px; padding: 8px 12px; float: left;
+									-webkit-border-radius: 5px; }
+	#inputSubmit { width: 10%; margin-left: 20px; background: #f4ff4; color: #1a1a1a; font-weight: bold; float: left;}
+	#makeCommentAjaxLoader { background: url('../img/ajax-loader-make-comment.gif') no-repeat; width: 16px; height: 16px; float: left; margin: 5px 0 0 15px; display: none; }
+
+/*
+.addToCollection { float: right; background: #1a1a1a; color: #f1f1f1; font-weight: bold; padding: 5px 8px; 
+										text-decoration: none; font-size: 11px; 
+										-webkit-border-radius: 5px; }
+.addToCollection.added { background-color: #79d451; }
+*/
+.addToCollection { float: right; width: 246px; height: 97px; display: block; background: url('../img/addToCollectionSprite.png'); text-indent: -9999px; }
+.addToCollection.added { background: url('../img/addToCollectionSprite.png') 0px -97px;}
+
+/* static banner */
+#static-banner-sword-and-sorcery { display: block; height: 250px; 
+								background: #696969 url('../img/sword-and-sorcery-ep-static-03.png') top center no-repeat; 
+								-webkit-border-radius: 15px; margin: 20px; 
+								-webkit-box-shadow: 0px 0px 8px #1a1a1a; }
+#static-banner-dead-space { display: block; height: 250px; 
+								background: #696969 url('../img/dead-space-static-01.png') top center no-repeat; 
+								-webkit-border-radius: 15px; margin: 20px; 
+								-webkit-box-shadow: 0px 0px 8px #1a1a1a; }
+
+/* text formatter */
+.italic { font-style: italic; }	
+
+.clear { clear: both; } 
+
+#ign-logo { position: absolute; float: right; top: 5px; right: 10px; height: 34px; width: 100px; background: url('../img/toolbarIconSm.png') no-repeat; z-index: 99999;}

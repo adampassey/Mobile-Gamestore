@@ -1,0 +1,96 @@
+body, .x-fullscreen
+{  background: url('../img/background.png'); background-attachment:fixed; }
+
+/* tabbar override */
+.x-tabbar-ign {
+  background-color: #000000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(2%, #191919), color-stop(100%, #303030));
+  background-image: linear-gradient(#000000, #191919 2%, #303030);
+  border-color: #1a1a1a;
+}
+.x-tabbar-ign .x-tab {
+  color: #f3f3f3;
+}
+.x-tabbar-ign .x-tab-active {
+  color: white;
+}
+.x-tabbar-ign .x-tab-pressed {
+  color: white;
+}
+
+.x-tabbar-ign.x-docked-bottom .x-tab {
+  text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+}
+.x-tabbar-ign.x-docked-bottom .x-tab img {
+  background-color: #354f6e;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7c9bc0), color-stop(2%, #416086), color-stop(100%, #293e56));
+  background-image: linear-gradient(#7c9bc0, #416086 2%, #293e56);
+}
+.x-tabbar-ign.x-docked-bottom .x-tab-active {
+  background-color: #1c2a3a;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4e74a2), color-stop(2%, #283b52), color-stop(100%, #111922));
+  background-image: linear-gradient(#4e74a2, #283b52 2%, #111922);
+  text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+}
+.x-tabbar-ign.x-docked-bottom .x-tab-active img {
+  background-color: #0a7aff;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #57a3ff), color-stop(50%, #2488ff), color-stop(51%, #0a7aff), color-stop(100%, #006df0));
+  background-image: linear-gradient(#57a3ff, #2488ff 50%, #0a7aff 51%, #006df0);
+}
+
+.x-tabbar-ign.x-docked-top .x-tab-active {
+  background-color: #0c1118;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(10%, #030507), color-stop(65%, #0c1118), color-stop(100%, #0c121a));
+  background-image: linear-gradient(#000000, #030507 10%, #0c1118 65%, #0c121a);
+  color: white;
+}
+
+/* toolbar override */
+.x-toolbar-ign {
+/*
+  background-color: #24364c;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5a81af), color-stop(2%, #304864), color-stop(100%, #192533));
+  background-image: linear-gradient(#5a81af, #304864 2%, #192533);
+  border-color: black;
+  */
+  background-color: #000000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(2%, #191919), color-stop(100%, #303030));
+  background-image: linear-gradient(#000000, #191919 2%, #303030);
+  border-color: #1a1a1a;
+}
+.x-toolbar-ign .x-toolbar-title {
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+}
+.x-toolbar-ign .x-button, .x-toolbar .x-toolbar-ign .x-button, .x-toolbar-ign .x-field-select .x-input-text, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text, .x-toolbar-ign .x-field-select:before, .x-toolbar .x-toolbar-ign .x-field-select:before {
+  border: 0.1em solid black;
+  border-top-color: black;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 0.1em 0;
+}
+.x-toolbar-ign .x-button.x-button-back:before, .x-toolbar-ign .x-button.x-button-forward:before, .x-toolbar .x-toolbar-ign .x-button.x-button-back:before, .x-toolbar .x-toolbar-ign .x-button.x-button-forward:before, .x-toolbar-ign .x-field-select .x-input-text.x-button-back:before, .x-toolbar-ign .x-field-select .x-input-text.x-button-forward:before, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text.x-button-back:before, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text.x-button-forward:before, .x-toolbar-ign .x-field-select:before.x-button-back:before, .x-toolbar-ign .x-field-select:before.x-button-forward:before, .x-toolbar .x-toolbar-ign .x-field-select:before.x-button-back:before, .x-toolbar .x-toolbar-ign .x-field-select:before.x-button-forward:before {
+  background: black;
+}
+/* line 61, ../themes/stylesheets/sencha-touch/default/_mixins.scss */
+.x-toolbar-ign .x-button, .x-toolbar-ign .x-button.x-button-back:after, .x-toolbar-ign .x-button.x-button-forward:after, .x-toolbar .x-toolbar-ign .x-button, .x-toolbar .x-toolbar-ign .x-button.x-button-back:after, .x-toolbar .x-toolbar-ign .x-button.x-button-forward:after, .x-toolbar-ign .x-field-select .x-input-text, .x-toolbar-ign .x-field-select .x-input-text.x-button-back:after, .x-toolbar-ign .x-field-select .x-input-text.x-button-forward:after, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text.x-button-back:after, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text.x-button-forward:after, .x-toolbar-ign .x-field-select:before, .x-toolbar-ign .x-field-select:before.x-button-back:after, .x-toolbar-ign .x-field-select:before.x-button-forward:after, .x-toolbar .x-toolbar-ign .x-field-select:before, .x-toolbar .x-toolbar-ign .x-field-select:before.x-button-back:after, .x-toolbar .x-toolbar-ign .x-field-select:before.x-button-forward:after {
+  background-color: #141e29;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #466890), color-stop(2%, #1f2f41), color-stop(100%, #080c11));
+  background-image: linear-gradient(#466890, #1f2f41 2%, #080c11);
+}
+/* line 65, ../themes/stylesheets/sencha-touch/default/_mixins.scss */
+.x-toolbar-ign .x-button img.x-icon-mask, .x-toolbar .x-toolbar-ign .x-button img.x-icon-mask, .x-toolbar-ign .x-field-select .x-input-text img.x-icon-mask, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text img.x-icon-mask, .x-toolbar-ign .x-field-select:before img.x-icon-mask, .x-toolbar .x-toolbar-ign .x-field-select:before img.x-icon-mask {
+  background-color: white;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(2%, #ffffff), color-stop(100%, #e7edf3));
+  background-image: linear-gradient(#ffffff, #ffffff 2%, #e7edf3);
+}
+/* line 74, ../themes/stylesheets/sencha-touch/default/_mixins.scss */
+.x-toolbar-ign .x-button.x-button-pressed, .x-toolbar-ign .x-button.x-button-active, .x-toolbar .x-toolbar-ign .x-button.x-button-pressed, .x-toolbar .x-toolbar-ign .x-button.x-button-active, .x-toolbar-ign .x-field-select .x-input-text.x-button-pressed, .x-toolbar-ign .x-field-select .x-input-text.x-button-active, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text.x-button-pressed, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text.x-button-active, .x-toolbar-ign .x-field-select:before.x-button-pressed, .x-toolbar-ign .x-field-select:before.x-button-active, .x-toolbar .x-toolbar-ign .x-field-select:before.x-button-pressed, .x-toolbar .x-toolbar-ign .x-field-select:before.x-button-active {
+  -webkit-box-shadow: inset black 0 0 0.1em, rgba(255, 255, 255, 0.1) 0 0.1em 0;
+}
+/* line 75, ../themes/stylesheets/sencha-touch/default/_mixins.scss */
+.x-toolbar-ign .x-button.x-button-pressed, .x-toolbar-ign .x-button.x-button-pressed:after, .x-toolbar-ign .x-button.x-button-active, .x-toolbar-ign .x-button.x-button-active:after, .x-toolbar .x-toolbar-ign .x-button.x-button-pressed, .x-toolbar .x-toolbar-ign .x-button.x-button-pressed:after, .x-toolbar .x-toolbar-ign .x-button.x-button-active, .x-toolbar .x-toolbar-ign .x-button.x-button-active:after, .x-toolbar-ign .x-field-select .x-input-text.x-button-pressed, .x-toolbar-ign .x-field-select .x-input-text.x-button-pressed:after, .x-toolbar-ign .x-field-select .x-input-text.x-button-active, .x-toolbar-ign .x-field-select .x-input-text.x-button-active:after, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text.x-button-pressed, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text.x-button-pressed:after, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text.x-button-active, .x-toolbar .x-toolbar-ign .x-field-select .x-input-text.x-button-active:after, .x-toolbar-ign .x-field-select:before.x-button-pressed, .x-toolbar-ign .x-field-select:before.x-button-pressed:after, .x-toolbar-ign .x-field-select:before.x-button-active, .x-toolbar-ign .x-field-select:before.x-button-active:after, .x-toolbar .x-toolbar-ign .x-field-select:before.x-button-pressed, .x-toolbar .x-toolbar-ign .x-field-select:before.x-button-pressed:after, .x-toolbar .x-toolbar-ign .x-field-select:before.x-button-active, .x-toolbar .x-toolbar-ign .x-field-select:before.x-button-active:after {
+  background-color: #080c11;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(10%, #000000), color-stop(65%, #080c11), color-stop(100%, #090d13));
+  background-image: linear-gradient(#000000, #000000 10%, #080c11 65%, #090d13);
+}
